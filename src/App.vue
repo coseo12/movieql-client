@@ -1,28 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <div v-if="!$apollo.loading">Loading...</div> -->
+    <!-- <div v-if="$apollo.queries.movies.loading">Loading...</div> -->
+    <menu-bar></menu-bar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuBar from './components/MenuBar.vue';
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+	components: {
+		MenuBar,
+	},
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+@import './assets/css/app.css';
 </style>

@@ -1,0 +1,12 @@
+nav {
+  color: white;
+  background-color: #42b883;
+  display: flex;
+  padding: 1rem;
+}
+nav .router-link-exact-active {
+  color: #35495e;
+}
+nav a {
+  color: white;
+}
