@@ -1,6 +1,6 @@
 # movieql-client
 
-in production...
+In development...
 
 ## Project setup
 
